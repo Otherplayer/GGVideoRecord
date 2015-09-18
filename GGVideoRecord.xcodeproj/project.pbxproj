@@ -15,6 +15,12 @@
 		6341C3821BA824FC0021079E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341C3801BA824FC0021079E /* LaunchScreen.storyboard */; };
 		6341C38D1BA824FC0021079E /* GGVideoRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341C38C1BA824FC0021079E /* GGVideoRecordTests.m */; };
 		6341C3981BA824FC0021079E /* GGVideoRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341C3971BA824FC0021079E /* GGVideoRecordUITests.m */; };
+		6341C3A61BA825170021079E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341C3A51BA825170021079E /* MediaPlayer.framework */; };
+		6341C3A81BA825210021079E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341C3A71BA825210021079E /* CoreGraphics.framework */; };
+		6341C3AA1BA825290021079E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341C3A91BA825290021079E /* AVFoundation.framework */; };
+		6341C3AC1BA8252F0021079E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341C3AB1BA8252F0021079E /* CoreMedia.framework */; };
+		6341C3AF1BA825C90021079E /* HYQVideoRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341C3AE1BA825C90021079E /* HYQVideoRecordView.m */; settings = {ASSET_TAGS = (); }; };
+		6341C3B21BA828820021079E /* HYQVideoRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341C3B11BA828820021079E /* HYQVideoRecordManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		6341C3931BA824FC0021079E /* GGVideoRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGVideoRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6341C3971BA824FC0021079E /* GGVideoRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGVideoRecordUITests.m; sourceTree = "<group>"; };
 		6341C3991BA824FC0021079E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6341C3A51BA825170021079E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6341C3A71BA825210021079E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6341C3A91BA825290021079E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6341C3AB1BA8252F0021079E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6341C3AD1BA825C90021079E /* HYQVideoRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYQVideoRecordView.h; sourceTree = "<group>"; };
+		6341C3AE1BA825C90021079E /* HYQVideoRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYQVideoRecordView.m; sourceTree = "<group>"; };
+		6341C3B01BA828820021079E /* HYQVideoRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYQVideoRecordManager.h; sourceTree = "<group>"; };
+		6341C3B11BA828820021079E /* HYQVideoRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYQVideoRecordManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6341C3AC1BA8252F0021079E /* CoreMedia.framework in Frameworks */,
+				6341C3AA1BA825290021079E /* AVFoundation.framework in Frameworks */,
+				6341C3A81BA825210021079E /* CoreGraphics.framework in Frameworks */,
+				6341C3A61BA825170021079E /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632EEC6E1BABE5F500D9354F /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				6341C3AD1BA825C90021079E /* HYQVideoRecordView.h */,
+				6341C3AE1BA825C90021079E /* HYQVideoRecordView.m */,
+				6341C3B01BA828820021079E /* HYQVideoRecordManager.h */,
+				6341C3B11BA828820021079E /* HYQVideoRecordManager.m */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
 		6341C3661BA824FC0021079E = {
 			isa = PBXGroup;
 			children = (
+				6341C3AB1BA8252F0021079E /* CoreMedia.framework */,
+				6341C3A91BA825290021079E /* AVFoundation.framework */,
+				6341C3A71BA825210021079E /* CoreGraphics.framework */,
+				6341C3A51BA825170021079E /* MediaPlayer.framework */,
 				6341C3711BA824FC0021079E /* GGVideoRecord */,
 				6341C38B1BA824FC0021079E /* GGVideoRecordTests */,
 				6341C3961BA824FC0021079E /* GGVideoRecordUITests */,
@@ -101,6 +134,7 @@
 		6341C3711BA824FC0021079E /* GGVideoRecord */ = {
 			isa = PBXGroup;
 			children = (
+				632EEC6E1BABE5F500D9354F /* Video */,
 				6341C3751BA824FC0021079E /* AppDelegate.h */,
 				6341C3761BA824FC0021079E /* AppDelegate.m */,
 				6341C3781BA824FC0021079E /* ViewController.h */,
@@ -272,7 +306,9 @@
 			files = (
 				6341C37A1BA824FC0021079E /* ViewController.m in Sources */,
 				6341C3771BA824FC0021079E /* AppDelegate.m in Sources */,
+				6341C3AF1BA825C90021079E /* HYQVideoRecordView.m in Sources */,
 				6341C3741BA824FC0021079E /* main.m in Sources */,
+				6341C3B21BA828820021079E /* HYQVideoRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GGVideoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Otherplayer.GGVideoRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GGVideoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Otherplayer.GGVideoRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +536,7 @@
 				6341C39E1BA824FC0021079E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6341C39F1BA824FC0021079E /* Build configuration list for PBXNativeTarget "GGVideoRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +545,7 @@
 				6341C3A11BA824FC0021079E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6341C3A21BA824FC0021079E /* Build configuration list for PBXNativeTarget "GGVideoRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +554,7 @@
 				6341C3A41BA824FC0021079E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

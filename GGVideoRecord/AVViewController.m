@@ -11,7 +11,7 @@
 #import "AVCaptureManager.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "HYQVideoRecordView.h"
-#import "HYQCheckVideoLinkController.h"
+//#import "HYQCheckVideoLinkController.h"
 
 @interface AVViewController ()<AVCaptureManagerDelegate>
 {

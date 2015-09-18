@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "HYQVideoRecordManager.h"
 @interface ViewController ()
-
+@property (nonatomic, strong)UIImagePickerController *pickerView;
 @end
 
 @implementation ViewController
@@ -17,11 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+}
+- (IBAction)startAction:(id)sender {
+    
+    [[HYQVideoRecordManager sharedInstance] showVideoRecord:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

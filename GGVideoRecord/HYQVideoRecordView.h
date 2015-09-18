@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HYQVideoRecordView : UIView
+#define TOOLBAR_HEIGHT 125.0f
 
+@interface HYQVideoRecordView : UIView
+@property (nonatomic, strong)void(^(didClickStartButton))(BOOL flag);
+@property (nonatomic, strong)void(^(didClickStopButton))();
 @end
